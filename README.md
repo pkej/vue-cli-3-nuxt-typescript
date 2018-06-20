@@ -36,13 +36,19 @@ For detailed explanation on how things work, checkout the [Nuxt.js docs](https:/
 ## Learn more
 ### This setup
 [Using Vue-Cli](https://medium.com/js-dojo/vue-cli-3-a-game-changer-for-frontend-development-a11b56a301a8)
+
 [Vue Cli Plugin Nuxt Starter Template](https://github.com/andoshin11/vue-cli-plugin-nuxt-starter-template)
+
 [Using Nuxt-Edge](https://medium.com/nuxt/nuxt-2-is-coming-oh-yeah-212c1a9e1a67)
+
 [mobx-vue](https://github.com/mobxjs/mobx-vue)
+
 [nuxt-property-decorator](https://github.com/nuxt-community/nuxt-property-decorator)
+
 [nuxt-class-component](https://github.com/nuxt-community/nuxt-class-component)
 ### TypeScript
 [TypeScript documentation](http://www.typescriptlang.org/docs/home.html)
+
 [Basarat's TypeScript Deep Dive](https://basarat.gitbooks.io/typescript/content/docs/getting-started.html)
 
 ### TypesScript and Vue
