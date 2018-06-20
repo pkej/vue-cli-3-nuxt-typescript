@@ -5,7 +5,7 @@ export default class MobxTestModel {
 
   @computed
   get computedAge() {
-    return this.age + 1;
+    return this.age + 10/2 * 3;
   }
 
   @action.bound
@@ -15,6 +15,6 @@ export default class MobxTestModel {
 
   @action.bound
   async fetchUsers() {
-    // this.users = [await http.get('/users')]
+  // this.users = [await http.get('/users')]
   }
 }
