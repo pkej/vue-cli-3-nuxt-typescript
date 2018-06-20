@@ -2,7 +2,7 @@
   "name": "vue-cli-3-nuxt-typescript-mobx",
   "version": "0.1.0",
   "private": true,
-  "keywords": {
+  "keywords": [
     "vue",
     "vuejs",
     "nuxt",
@@ -10,7 +10,7 @@
     "mobx",
     "typescript",
     "template"
-  },
+  ],
   "author": "Paul Egell-Johnsen <paul.k.egell-johnsen@gmail.com>",
   "license": "SEE FILE LICENSE",
   "scripts": {
