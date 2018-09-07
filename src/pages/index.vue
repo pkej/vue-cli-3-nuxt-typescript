@@ -1,32 +1,33 @@
 <template>
-  <section class="container">
+  <section>
     <mobx-test/>
+    <div>
+      <h1 v-text="title"/>
+      <v-ts-file/>
+      <v-tsx-file/>
+      <v-ts-lang/>
+      <v-tsx-lang/>
       <div>
-        <h1 v-text="title"/>
-        <v-ts-file/>
-        <v-tsx-file/>
-        <v-ts-lang/>
-        <v-tsx-lang/>
-        <ul>
-          <li><nuxt-link to="/file-ts">File with .ts extension</nuxt-link></li>
-          <li><nuxt-link to="/file-tsx">File with .tsx extension</nuxt-link></li>
-          <li><nuxt-link to="/lang-ts">Page with lang="ts"</nuxt-link></li>
-          <li><nuxt-link to="/lang-tsx">Page with lang="tsx"</nuxt-link></li>
-        </ul>
-        <v-reverse/>
+        <h1>Pages written using lang="..."</h1>
+        <LangPossibilites>
+          <li><nuxt-link to="/lang-possibilities">Go to <tt>/lang-possibilities</tt></nuxt-link></li>
+        </LangPossibilites>
       </div>
+      <ul/>
+      <v-reverse/>
+    </div>
   </section>
 </template>
 
-<script>
-import { Component, Vue } from "nuxt-property-decorator";
-import { State } from "vuex-class";
-import vReverse from "../components/reverse.vue";
-import vTsFile from "../components/ts-file";
-import vTsLang from "../components/ts-lang.vue";
-import vTsxFile from "../components/tsx-file";
-import vTsxLang from "../components/tsx-lang.vue";
-import MobxTest from "~/components/mobxtest/MobxTest.vue";
+<script lang="ts">
+import { Component, Vue } from 'nuxt-property-decorator'
+import vReverse from '@/components/reverse.vue'
+import vTsFile from '@/components/ts-file'
+import vTsLang from '@/components/ts-lang.vue'
+import vTsxFile from '@/components/tsx-file'
+import vTsxLang from '@/components/tsx-lang.vue'
+import MobxTest from '~/components/mobxtest/MobxTest.vue'
+import LangPossibilites from '@/pages/lang-possibilities/index.vue'
 
 @Component({
   components: {
@@ -35,40 +36,11 @@ import MobxTest from "~/components/mobxtest/MobxTest.vue";
     vTsLang,
     vTsxFile,
     vTsxLang,
-    MobxTest
-  }
+    MobxTest,
+    LangPossibilites,
+  },
 })
-export default class extends Vue {}
+export default class extends Vue {
+  title: string = 'Hello world'
+}
 </script>
-
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
