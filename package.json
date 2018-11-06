@@ -31,7 +31,7 @@
   "dependencies": {
     "mobx-vue": "^2.0.5",
     "nuxt-class-component": "^1.2.1",
-    "nuxt-edge": "^2.0.0-25481399.feabdca",
+    "nuxt": "^2.0.0",
     "nuxt-property-decorator": "^1.2.0",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.16",
