@@ -1,71 +1,113 @@
-# Vue Project
+# nrk.no.sapmi.server
 
-## VUE CLI 3.0 installation procedure
+vue-cli w/typescript, pwa, tslint, router
+npm --save install nuxt nuxt-class-component nuxt-property-decorator @nuxtjs/axios @nuxtjs/style-resources mobx mobx-vue @nuxtjs/font-awesome @nuxtjs/localtunnel vue-i18n @nuxtjs/vuetify socket.io
 
-``` bash
-##
-$ vue create app-name
-$ cd app-name
-$ vue add nuxt-starter-template
-$ npm un nuxt
-$ npm i nuxt-edge --save
-$ npm i nuxt-typescript typescript tslint --save-dev
+npm --save-dev install nuxt-typescript
+
+## Project setup
+
+```
+npm install
 ```
 
-[Follow these instructions for configuring nuxt.config.js.](https://github.com/wagerfield/nuxt-typescript) Don't worry about tsconfig.json if you configure vue cli to use typescript it should be configured correctly already.
+### Compiles and hot-reloads for development
 
-``` bash
-##
-$ npm i mobx-vue --save
-$ npm i nuxt-class-component
-$ npm i nuxt-property-decorator
+```
+npm run serve
 ```
 
-## Build Setup
+### Compiles and minifies for production
 
-``` bash
-# install dependencies
-$ npm install # Or yarn install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+```
+npm run build
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+### Run your tests
 
-## Learn more
+```
+npm run test
+```
 
-### This setup
+### Lints and fixes files
 
-[Using Vue-Cli](https://medium.com/js-dojo/vue-cli-3-a-game-changer-for-frontend-development-a11b56a301a8)
+```
+npm run lint
+```
 
-[Vue Cli Plugin Nuxt Starter Template](https://github.com/andoshin11/vue-cli-plugin-nuxt-starter-template)
+### Customize configuration
 
-[Using Nuxt-Edge](https://medium.com/nuxt/nuxt-2-is-coming-oh-yeah-212c1a9e1a67)
+See [Configuration Reference](https://cli.vuejs.org/config/).
 
-[mobx-vue](https://github.com/mobxjs/mobx-vue)
+### Typescript book
 
-[nuxt-property-decorator](https://github.com/nuxt-community/nuxt-property-decorator)
+[The online book on TypeScript](https://basarat.gitbooks.io/typescript/content/)
 
-[nuxt-class-component](https://github.com/nuxt-community/nuxt-class-component)
+### Typescript template
 
-### TypeScript
+[Lifted ideas from this](https://github.com/nuxt-community/typescript-template)
 
-[TypeScript documentation](http://www.typescriptlang.org/docs/home.html)
+### Nuxt examples
 
-[Basarat's TypeScript Deep Dive](https://basarat.gitbooks.io/typescript/content/docs/getting-started.html)
+https://github.com/nuxt/nuxt.js/tree/dev/examples
 
-### TypesScript and Vue
+### Typescript module for nuxt
 
-[This video helped me get rid of TSLint errors when it came to props](https://egghead.io/lessons/vue-js-define-props-on-a-vue-class-with-vue-property-decorator)
+Git: https://github.com/wagerfield/nuxt-typescript
 
-### General Vue/Nuxt resources
+### nuxt-class-component
 
-[Chris V. Fritz Vue Enterprise Boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate)
+https://github.com/nuxt-community/nuxt-class-component
+
+### nuxt-property-decorator
+
+https://github.com/nuxt-community/nuxt-property-decorator
+
+### @nuxtjs/axios
+
+Docs: https://axios.nuxtjs.org/
+Git: https://github.com/nuxt-community/axios-module
+
+### @nuxtjs/style-resources
+
+https://github.com/nuxt-community/style-resources-module
+
+### @nuxtjs/localtunnel
+
+Git: https://github.com/nuxt-community/modules/tree/master/packages/localtunnel
+localtunnel git: https://github.com/localtunnel/localtunnel
+Alternatives: https://www.pluralsight.com/guides/exposing-your-local-node-js-app-to-the-world
+
+### @nuxtjs/pwa-module
+
+Docs: https://pwa.nuxtjs.org/
+Git: https://github.com/nuxt-community/pwa-module
+
+### @nuxtjs/vuetify
+
+https://github.com/nuxt-community/modules/tree/master/packages/vuetify
+
+### mobx
+
+Docs: https://mobx.js.org/
+Git: https://github.com/mobxjs/mobx
+Awesome: https://github.com/mobxjs/awesome-mobx
+
+### socket.io
+
+Web: https://socket.io/
+
+#### Tutorials
+
+https://www.youtube.com/watch?v=ggVsXljT0MI
+https://www.youtube.com/watch?v=To5y2WLsKIw
+
+### vue-mobx
+
+Git: https://github.com/mobxjs/mobx-vue
+
+### TODO
+
+https://github.com/epoberezkin/ajv
+https://github.com/quasarframework/quasar-nuxt
+https://github.com/CKGrafico/FooCards-Nuxt
