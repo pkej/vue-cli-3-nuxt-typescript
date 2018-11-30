@@ -1,4 +1,4 @@
-# nrk.no.sapmi.server
+# server
 
 vue-cli w/typescript, pwa, tslint, router
 npm --save install nuxt nuxt-class-component nuxt-property-decorator @nuxtjs/axios @nuxtjs/style-resources mobx mobx-vue @nuxtjs/font-awesome @nuxtjs/localtunnel vue-i18n @nuxtjs/vuetify socket.io
